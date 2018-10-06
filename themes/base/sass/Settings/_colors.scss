@@ -26,13 +26,13 @@ $palettes: (
     ),
     button: (
         background: #555,
-        background--highlight: $brand-secondary,
+        background--highlight: $brand-primary,
         background--hover: darken(#555, 10%),
         background--danger: $brand-primary,
         background--danger-hover: darken($brand-primary, 10%),
-        background--highlight-hover: darken($brand-secondary, 10%),
-        color: #fff,
-        color--highlight: #222,
+        background--highlight-hover: darken($brand-primary, 10%),
+        color: $brand-white,
+        color--highlight: $brand-white,
     ),
     error: (
         color: $brand-primary,
@@ -43,7 +43,7 @@ $palettes: (
         background--success: $brand-quaternary,
         background--error: $brand-primary,
         background--warn: $brand-secondary,
-        text--success: #333,
+        text--success: $brand-white,
         text--error: #fff,
         text--warn: #333
     ),
@@ -53,7 +53,7 @@ $palettes: (
         background--warning: $brand-secondary,
         background--confirm: #222,
         border: #333,
-        color: #333,
+        color: $brand-white,
         color--invert: #fff
     ),
     footer: (
