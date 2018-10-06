@@ -7,37 +7,50 @@
     We also respect our BEM like notation and files architecture.
 */
 
+/** Colours imortend from Kick.AI theme */
+$brand-primary: #E67564;
+$brand-secondary: #D9BC5B;
+$brand-tertiary: #272727;
+$brand-quaternary: #63AA8B;
+$brand-white: #fff;
+$brand-black: #333333;
+$brand-light: #F7F7F7;
+
+$color-bodytext: $brand-black;
+$color-gray: #C7C7C7;
+$color-gray-dark: #9e9e9e;
+
 $palettes: (
     action: (
         link: #999
     ),
     button: (
         background: #555,
-        background--highlight: #efe778,
+        background--highlight: $brand-secondary,
         background--hover: darken(#555, 10%),
-        background--danger: #f10,
-        background--danger-hover: darken(#f10, 10%),
-        background--highlight-hover: darken(#efe778, 10%),
+        background--danger: $brand-primary,
+        background--danger-hover: darken($brand-primary, 10%),
+        background--highlight-hover: darken($brand-secondary, 10%),
         color: #fff,
         color--highlight: #222,
     ),
     error: (
-        color: #f10,
+        color: $brand-primary,
         text-color: #333,
         text-color--invert: #fff
     ),
     badge: (
-        background--success: #76d443,
-        background--error: #f10,
-        background--warn: #efe778,
+        background--success: $brand-quaternary,
+        background--error: $brand-primary,
+        background--warn: $brand-secondary,
         text--success: #333,
         text--error: #fff,
         text--warn: #333
     ),
     flash: (
-        background--error: #f10,
-        background--success: #76d443,
-        background--warning: #efe778,
+        background--error: $brand-primary,
+        background--success: $brand-quaternary,
+        background--warning: $brand-secondary,
         background--confirm: #222,
         border: #333,
         color: #333,
@@ -57,15 +70,15 @@ $palettes: (
         label-color: #999
     ),
     header: (
-        background: #222,
+        background: $brand-white,
         background--highlight: #111,
-        color: #fff,
+        color: $brand-white,
         label-color: #999
     ),
     layout: (
         background: #fff,
         border: #eee,
-        close-color: #fff,
+        close-color: $color-bodytext,
         color: #999,
         content-background: #f8f8f8,
         content-border: #bbb,
@@ -73,17 +86,17 @@ $palettes: (
     ),
     loader: (
         background: #222,
-        background--highlight: #efe778
+        background--highlight: $brand-secondary
     ),
     product: (
         background: #f8f8f8,
         border: #eee,
-        color--error: #f10,
+        color--error: $brand-primary,
         color--highlight: #333
     ),
     quantity-trigger: (
         background: #ccc,
-        background--hover: #efe778,
+        background--hover: $brand-secondary,
         background--disabled: #eee,
         color: #111,
         color--disabled: #bbb
@@ -105,7 +118,7 @@ $palettes: (
         background--highlight: #f8f8f8,
         border: #eee,
         color--highlight: #333,
-        color--success: #76d443
+        color--success: $brand-quaternary
     ),
     tooltip: (
         background: #ccc,

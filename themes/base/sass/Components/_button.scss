@@ -54,7 +54,7 @@ $_btn-size: 36px;
 // [3]
 .snip-btn--highlight {
     background: palette(button, background--highlight);
-    color: palette(button, color--highlight);
+    color: palette(button, color--highlight)!important;
 
     &:hover {
         background-color: palette(button, background--highlight-hover);
