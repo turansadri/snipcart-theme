@@ -61,6 +61,34 @@ $_layout-content-border: 1px solid palette(layout, content-border);
 
     @media #{$mq-medium} {
         padding: 2em 0;
+
+        &--full {
+            padding: 0;
+        }
+    }
+
+    &--full {
+        padding: 0;
+    }
+}
+
+.snipcart-step{
+    &--inner-loading{
+        .snip-layout__loading{
+            display:block;
+        }
+        .snip-layout__content{
+            display:none;
+        }
+    }
+
+    &--inner-loaded{
+        .snip-layout__loading{
+            display:none;
+        }
+        .snip-layout__content{
+            display:block;
+        }
     }
 }
 
