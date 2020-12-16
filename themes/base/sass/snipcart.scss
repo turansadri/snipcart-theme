@@ -98,6 +98,9 @@ body.snip-open {
     @import "components/_badge.scss";
     @import "components/_payment.scss";
 
+    .snipcart-customfield-textbox {
+        display: none;
+    }
 
     // Responsive
     @media #{$mq-large} {
